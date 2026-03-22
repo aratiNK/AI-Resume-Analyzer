@@ -3,11 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && copy public\\_redirects build\\client\\_redirects",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
-  },
+  "dev": "vite",
+  "build": "vite build && cp public/_redirects build/client/_redirects"
+},
   "dependencies": {
     "@react-router/node": "^7.5.3",
     "@react-router/serve": "^7.5.3",
